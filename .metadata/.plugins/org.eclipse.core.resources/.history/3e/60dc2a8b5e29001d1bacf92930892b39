@@ -1,0 +1,18 @@
+package model.entities;
+
+import java.util.Date;
+
+public class Reservation {
+	private Integer roomNumber;
+	private Date checkIn;
+	private Date checkOut;
+	
+	public Reservation() {
+	}
+	public Reservation(Integer roomNumber, Date checkIn, Date checkout) {
+		this.roomNumber = roomNumber;
+		this.checkIn = checkIn;
+		this.checkOut = checkOut;
+	}
+	
+}

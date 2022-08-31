@@ -1,0 +1,14 @@
+package entities;
+
+import entities.enums.Color;
+
+public class Shape {
+	Color color;
+	
+	public Shape() {
+	}
+	
+	public Shape(Color color) {
+		this.color = color;
+	}
+}

@@ -1,0 +1,11 @@
+package entities;
+
+public class Rectangle extends Shape{
+	Double width, height;
+	
+	public Rectangle() {
+		super();
+	}
+	
+	public Rectangle(Double)
+}

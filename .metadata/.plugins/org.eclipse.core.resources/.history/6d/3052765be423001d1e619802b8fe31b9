@@ -1,0 +1,9 @@
+package entities;
+
+public class PessoaFisica extends Pessoa{
+	
+	@Override
+	public Double calculaImposto(){
+		
+	}
+}
