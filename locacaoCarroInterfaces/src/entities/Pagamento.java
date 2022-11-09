@@ -25,6 +25,6 @@ public class Pagamento {
 	}
 	
 	public Double pagamentoTotal() {
-		return getPagamentoBasico() - getImposto();
+		return getPagamentoBasico() + getImposto();
 	}
 }
