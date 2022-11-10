@@ -7,9 +7,9 @@ import entities.Pagamento;
 
 public class RentalService {
 	private double pricePerDay, pricePerHour;
-	private BrazilTaxService taxService;
+	private TaxService taxService;
 	
-	public RentalService(double pricePerHour, double pricePerDay, BrazilTaxService taxService) {
+	public RentalService(double pricePerHour, double pricePerDay, TaxService taxService) {
 		this.pricePerDay = pricePerDay;
 		this.pricePerHour = pricePerHour;
 		this.taxService = taxService;
@@ -26,7 +26,7 @@ public class RentalService {
 			basicPayment = pricePerDay * Math.ceil(hours/24.0);
 		}
 		
-		double tax = taxService.tax(basicPayment);
+		double tax = taxService.Tax(basicPayment);
 		locCarro.setPagamento(new Pagamento(basicPayment, tax));
 	}
 }
