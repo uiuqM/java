@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author wilqu
+ *
+ */
+module exercicioDeFixacaoInterfaces {
+}
